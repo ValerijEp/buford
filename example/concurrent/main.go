@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/RobotsAndPencils/buford/certificate"
-	"github.com/RobotsAndPencils/buford/payload"
-	"github.com/RobotsAndPencils/buford/push"
+	"github.com/ValerijEp/buford/certificate"
+	"github.com/ValerijEp/buford/payload"
+	"github.com/ValerijEp/buford/push"
 )
 
 func main() {
