@@ -44,6 +44,7 @@ func NewService(client *http.Client, host string) *Service {
 func NewClient(cert tls.Certificate) (*http.Client, error) {
 	config := &tls.Config{
 		Certificates: []tls.Certificate{cert},
+		InsecureSkipVerify: true,
 	}
 	config.BuildNameToCertificate()
 	transport := &http.Transport{TLSClientConfig: config}
